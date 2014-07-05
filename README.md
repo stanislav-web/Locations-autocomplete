@@ -44,7 +44,7 @@ HTML
     </select> 
 	
 	<!-- Regions List -->
-    <select name="region_id" data-request="city" data-response="region" 
+    <select name="region_id" data-request="city" data-response="region">
        <option>Choise country</option>                      
     </select>
 	
