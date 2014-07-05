@@ -17,7 +17,7 @@ List with a choice of settlements. Use AutoComplete Ajax
  *  - iPhone Safari
  *  - Android Web Browser
  *  
- *  @see 
+ *  JS @see 
  *  $('select.autocomplete').on('change', function(e) {
  *      e.preventDefault();
  *      
@@ -33,4 +33,23 @@ List with a choice of settlements. Use AutoComplete Ajax
  *   });   
  */
 ?>
+```
+HTML
+```
+	<!-- Country List -->
+	<select name="country_id" data-request="region" data-response="country">
+        <option value="1" selected>Russia</option>
+        <option value="2">Kazakhstan</option>
+        <option value="3">Ukraine</option>
+    </select> 
+	
+	<!-- Regions List -->
+    <select name="region_id" data-request="city" data-response="region" 
+       <option>Choise country</option>                      
+    </select>
+	
+	<!-- Cities List -->
+    <select name="city_id" data-mini="true" data-response="city">
+       <option>Choise region</option>                      
+    </select> 
 ```
